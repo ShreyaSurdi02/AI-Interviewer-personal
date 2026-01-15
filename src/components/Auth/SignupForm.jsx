@@ -69,11 +69,11 @@ export default function SignupForm() {
     console.log("SIGNUP RESULT", result);
 
     if (result?.status === "success") {
-<<<<<<< HEAD
+
       // ✅ tokens come inside result.tokens
-=======
+
       // tokens come inside result.tokens
->>>>>>> d1b0fd5d76d2ce9bc481b440221a66d26f4cc052
+
       const accessToken = result.tokens?.accessToken || null;
       const refreshToken = result.tokens?.refreshToken || null;
 

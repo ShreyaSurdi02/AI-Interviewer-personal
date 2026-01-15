@@ -57,11 +57,11 @@ function LoginForm() {
       console.log("LOGIN RESULT ", result);
 
       if (result?.status === "success") {
-<<<<<<< HEAD
+
         // ✅ tokens are inside result.tokens
-=======
+
         // tokens are inside result.tokens
->>>>>>> d1b0fd5d76d2ce9bc481b440221a66d26f4cc052
+
         const accessToken = result.tokens?.accessToken || null;
         const refreshToken = result.tokens?.refreshToken || null;
 

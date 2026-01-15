@@ -2,11 +2,11 @@ export const LOGIN_URL = "https://ai-interviewer-server-two.vercel.app/api/v1/au
 export const SIGNUP_URL = "https://ai-interviewer-server-two.vercel.app/api/v1/auth/signup";
 export const ALL_COMPANIES_URL = "https://ai-interviewer-server-two.vercel.app/api/v1/company/getCompanies";
 export const QUESTIONS_BY_COMPANY = "https://ai-interviewer-server-two.vercel.app/api/v1/questions/getQuestions/"
-<<<<<<< HEAD
+
 export const GET_INTERVIEW_DETAILS = "https://ai-interviewer-server-two.vercel.app/api/v1/answers/getAnswers/";
 export const Save_Answer = "https://ai-interviewer-server-two.vercel.app/api/v1/answers/saveAnswers/";
-export const REFRESH_TOKEN_URL = "https://ai-interviewer-server-two.vercel.app/api/v1/auth/refreshToken";
-=======
+
+
 export const REFRESH_TOKEN_URL = "https://ai-interviewer-server-two.vercel.app/api/v1/auth/refreshToken";
 export const SUBMIT_INTERVIEW = "https://ai-interviewer-server-two.vercel.app/api/v1/interview/submitInterview";
->>>>>>> d1b0fd5d76d2ce9bc481b440221a66d26f4cc052
+
