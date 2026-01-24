@@ -9,4 +9,3 @@ export const Save_Answer = "https://ai-interviewer-server-two.vercel.app/api/v1/
 
 export const REFRESH_TOKEN_URL = "https://ai-interviewer-server-two.vercel.app/api/v1/auth/refreshToken";
 export const SUBMIT_INTERVIEW = "https://ai-interviewer-server-two.vercel.app/api/v1/interview/submitInterview";
-

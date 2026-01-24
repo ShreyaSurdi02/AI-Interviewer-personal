@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 
 export default function CompanyLogin() {
   const navigate = useNavigate();
+  const { loginCompany } = useContext(AuthContext);
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -11,7 +13,7 @@ export default function CompanyLogin() {
   const [passwordError, setPasswordError] = useState("");
   const [loginError, setLoginError] = useState("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
 
     setEmailError("");
@@ -36,8 +38,15 @@ export default function CompanyLogin() {
       return;
     }
 
-    // IF VALID → proceed (you will replace this with API call later)
-    alert("Company login submitted!");
+    try {
+      // 🔑 AUTH CONTEXT LOGIN
+      await loginCompany(email, password);
+
+      // ✅ REDIRECT TO COMPANY DASHBOARD
+      navigate("/company/dashboard");
+    } catch (error) {
+      setLoginError("Invalid company credentials.");
+    }
   };
 
   return (
